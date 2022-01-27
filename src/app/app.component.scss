@@ -1,16 +1,24 @@
 .img-container{
-  height: 100vh;
+  // height: 50vh;
   width: 100vw;
+  height: 80vh;
   max-width: 100%;
   overflow: hidden;
 }
 
 .img-slideshow {
-  height: 100vh;
-  width: 100vw;
+  height: 50vh;
+  width: 50vw;
   max-width: 100%;
   object-fit: cover;
-  animation: zoomIn 8s ease;
+  animation: zoomIn 8s ease infinite;
+  border-radius: 16px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes zoomIn {
@@ -18,6 +26,6 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
 }
