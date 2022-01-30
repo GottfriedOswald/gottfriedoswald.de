@@ -8,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   images = ['laptop002.jpg', 'code-on-screen.jpg', 'college001.jpg'];
+  headlines = ['work effectively', 'the next Generation of Code', 'learn from best'];
   currentImage = 0;
   showImage = true;
+  showInfoText = false;
+
+  hideAndSeek(){
+    if (this.showInfoText == false) {
+      this.showInfoText = true;
+    }else{
+      this.showInfoText = false;
+    }
+  }
 
   // ngOnInit(){} beinhaltet Funktionen die beim Start ausgeführt werden.
   // OnInit muss aber bei der Klassenerstellung implementiert werden
