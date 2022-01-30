@@ -1,0 +1,9 @@
+<div class="img-container center">
+    <img *ngIf="showImage" src="assets/img/{{images[currentImage]}}" class="img-slideshow" alt="different image">
+</div>
+
+<div class="img-container bg-Overlay">
+    <p *ngIf="showImage" class="fadeIn">
+        {{headlines[currentImage]}}
+    </p>
+</div>
