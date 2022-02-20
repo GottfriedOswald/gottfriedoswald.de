@@ -34,7 +34,7 @@ export class SlideshowComponent implements OnInit {
       this.currentImage++;
       this.currentImage = this.currentImage % this.images.length;
       this.hideImage();
-    },8000);
+    },7000);
   }
 
   // blendet für kurze Zeit das Bild aus um das unschöne Flackern

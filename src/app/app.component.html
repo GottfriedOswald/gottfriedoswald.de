@@ -1,6 +1,15 @@
-<app-menu></app-menu>
-<app-slideshow></app-slideshow>
+
+    <!-- wenn router.url nicht Startseite (Slideshow) ist, dann ist Variable "darkMode" gleich true -->
+<app-menu [darkMode]="router.url !== '/'"></app-menu>
+
+<!-- nachfolgende div bekommt die class routingContainer wenn die URL nicht die Startseite ist -->
+<div [class.routingContainer]="router.url !=='/'">
+    <router-outlet></router-outlet>
+</div>
+
 <app-main></app-main>
+
+
 
 
 

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { MainComponent } from './main/main.component';
 import { MenuComponent } from './menu/menu.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SlideshowComponent,
     MainComponent,
-    MenuComponent
+    MenuComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,

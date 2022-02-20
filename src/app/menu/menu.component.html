@@ -1,11 +1,17 @@
 <header class="header">
     <div class="logo">
-        <img src="assets/img/wappenlogo.png" alt="">
+
+        
+        <img *ngIf="!darkMode" routerLink="/" src="../../assets/img/wappenlogo_darkmode.png" alt="">
+        <img *ngIf="darkMode" routerLink="/" src="../../assets/img/wappenlogo_white.png" alt="">
+
+        
     </div>
-    <div class="linkbanner">
-        <a href="#">Home</a>
-        <a href="#">Produkte</a>
-        <a href="https://www.google.de" target="_blank">Info</a>
-        <a href="#">Impressum</a>
+    
+    <div [class.darkLinks]="darkMode">
+        <a routerLink="/">Home</a>
+        <a href="https://www.google.de" target="_blank">Curriculum</a>
+        <a href="#">Projects</a>
+        <a routerLink="/imprint">Imprint</a>
     </div>
 </header>
