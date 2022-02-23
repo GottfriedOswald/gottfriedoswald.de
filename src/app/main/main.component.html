@@ -1,7 +1,13 @@
 
 <div class="center flexColumn">
-    <button (click)="hideAndSeek()">Click to read more</button>
-    <p *ngIf="showInfoText" >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis numquam, voluptate sint labore ex quod neque sapiente necessitatibus deleniti 
-    </p>
+    <button (click)="hideAndSeek()">About me</button>
+    <div *ngIf="showInfoText" class="myProfileContainer">
+        <img src="../../assets/img/GottfriedOswald_small.jpg" alt="Profile Image">
+       <p>
+        Hello! <br>
+        My name is <strong>Gottfried Oswald</strong> <br>
+        and I am a Frontend-Developer!
+       </p>
+        
+    </div>
 </div>
